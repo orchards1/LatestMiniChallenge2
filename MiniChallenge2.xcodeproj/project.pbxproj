@@ -18,7 +18,6 @@
 		B13B74C522D8B68F00812DE8 /* MountainsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13B74C422D8B68F00812DE8 /* MountainsDetailViewController.swift */; };
 		B13F090122E0775900EF2F07 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13F090022E0775900EF2F07 /* HealthKit.framework */; };
 		B13F090522E09E3300EF2F07 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F090422E09E3300EF2F07 /* CornerRadius.swift */; };
-		B14148A722DF34EB006D3598 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14148A622DF34EB006D3598 /* VideoPlayer.swift */; };
 		B142A96B22D873EF0071D2DA /* MountainsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B142A96A22D873EF0071D2DA /* MountainsList.storyboard */; };
 		B142A97222D87FBB0071D2DA /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142A97122D87FBB0071D2DA /* Slide.swift */; };
 		B142A97422D87FC80071D2DA /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = B142A97322D87FC80071D2DA /* Slide.xib */; };
@@ -38,6 +37,8 @@
 		B14ABFDD22D75DAA00D38DDB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ABFDC22D75DAA00D38DDB /* NotificationController.swift */; };
 		B14ABFDF22D75DAB00D38DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */; };
 		B162FFD822E308D90001383E /* WorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162FFD722E308D90001383E /* WorkoutTableViewCell.swift */; };
+		B162FFE122E313D30001383E /* videoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162FFE022E313D30001383E /* videoPlayerViewController.swift */; };
+		B162FFE222E315BB0001383E /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B162FFDB22E310AE0001383E /* video1.mp4 */; };
 		B1821B5C22E1D83B009F23C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1821B5B22E1D83B009F23C3 /* Assets.xcassets */; };
 		B1C09CB622DC776400612BB2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1C09CB422DC776400612BB2 /* Model.xcdatamodeld */; };
 		B1FE0DC022DAEAFF00873B5F /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FE0DBF22DAEAFF00873B5F /* GetStarted.swift */; };
@@ -112,7 +113,6 @@
 		B13F08FE22E0775900EF2F07 /* MiniChallenge2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiniChallenge2.entitlements; sourceTree = "<group>"; };
 		B13F090022E0775900EF2F07 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		B13F090422E09E3300EF2F07 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
-		B14148A622DF34EB006D3598 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		B142A96A22D873EF0071D2DA /* MountainsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MountainsList.storyboard; sourceTree = "<group>"; };
 		B142A97122D87FBB0071D2DA /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		B142A97322D87FC80071D2DA /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
@@ -141,6 +141,8 @@
 		B14ABFE022D75DAB00D38DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B14ABFE122D75DAB00D38DDB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		B162FFD722E308D90001383E /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewCell.swift; sourceTree = "<group>"; };
+		B162FFDB22E310AE0001383E /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video1.mp4; path = "../../Downloads/MiniChallenge2-master/video1.mp4"; sourceTree = "<group>"; };
+		B162FFE022E313D30001383E /* videoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoPlayerViewController.swift; sourceTree = "<group>"; };
 		B1821B5B22E1D83B009F23C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1C09CB522DC776400612BB2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		B1FE0DBF22DAEAFF00873B5F /* GetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStarted.swift; sourceTree = "<group>"; };
@@ -182,11 +184,11 @@
 		45B32AB122DC5BC200485C27 /* Workout */ = {
 			isa = PBXGroup;
 			children = (
+				B162FFE022E313D30001383E /* videoPlayerViewController.swift */,
 				B162FFD722E308D90001383E /* WorkoutTableViewCell.swift */,
 				45B32AB222DC5BDD00485C27 /* Workout.storyboard */,
 				45B32AB422DC714D00485C27 /* Workout.swift */,
 				45B32AE822DF0EF400485C27 /* WorkoutCollectionViewCell.swift */,
-				B14148A622DF34EB006D3598 /* VideoPlayer.swift */,
 				B135A24122E2F481003E1EB2 /* Activities.swift */,
 			);
 			path = Workout;
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				B1821B5B22E1D83B009F23C3 /* Assets.xcassets */,
+				B162FFDB22E310AE0001383E /* video1.mp4 */,
 				B14ABF9E22D75DA900D38DDB /* MiniChallenge2 */,
 				B14ABFB322D75DAA00D38DDB /* MiniChallenge2Tests */,
 				B14ABFBE22D75DAA00D38DDB /* MiniChallenge2UITests */,
@@ -473,6 +476,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B162FFE222E315BB0001383E /* video1.mp4 in Resources */,
 				45B32AB322DC5BDD00485C27 /* Workout.storyboard in Resources */,
 				B142A97422D87FC80071D2DA /* Slide.xib in Resources */,
 				B14ABFAA22D75DA900D38DDB /* LaunchScreen.storyboard in Resources */,
@@ -527,8 +531,8 @@
 				B162FFD822E308D90001383E /* WorkoutTableViewCell.swift in Sources */,
 				B13F090522E09E3300EF2F07 /* CornerRadius.swift in Sources */,
 				B142A97622D880ED0071D2DA /* OnboardingController.swift in Sources */,
-				B14148A722DF34EB006D3598 /* VideoPlayer.swift in Sources */,
 				45B32AB522DC714D00485C27 /* Workout.swift in Sources */,
+				B162FFE122E313D30001383E /* videoPlayerViewController.swift in Sources */,
 				B142A97222D87FBB0071D2DA /* Slide.swift in Sources */,
 				4B7ADC2B22D8C393000C31ED /* Mountain.swift in Sources */,
 				B14ABFA222D75DA900D38DDB /* ViewController.swift in Sources */,

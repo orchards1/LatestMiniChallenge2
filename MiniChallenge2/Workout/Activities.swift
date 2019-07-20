@@ -12,11 +12,13 @@ class Activities{
     var name: String
     var current: Int
     var max: Int
+    var video: Int
     
     //initializer
-    init(name: String, current: Int, max: Int ){
+    init(name: String, current: Int, max: Int ,video: Int){
         self.name = name
         self.current = current
         self.max = max
+        self.video = video
     }
 }

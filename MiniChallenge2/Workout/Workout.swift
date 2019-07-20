@@ -8,9 +8,14 @@
 
 import UIKit
 import HealthKit
+import AVKit
+import AVFoundation
 
 class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
+    var arrayActivityName = [String]()
+    var arraycurrent = [Int]()
+    var arraymax = [Int]()
+    var arrayvideo = [Int]()
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //        return CGSize(width: collectionView.frame.width / 5, height: collectionView.frame.height / 4.5)
         return CGSize(width: 50, height: 50)
@@ -56,11 +61,13 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     override func viewDidLoad() {        UserDefaults.standard.set(true, forKey: "sudahmilih")
                 super.viewDidLoad()
         fire()
-        var arrayActivityName = ["Olahraga1","Olahraga2","Olahraga3"]
-        var arraycurrent = [0,0,0]
-        var arraymax = [20,20,20]
+        arrayActivityName = ["Olahraga1","Olahraga2","Olahraga3"]
+        arraycurrent = [0,0,0]
+        arraymax = [20,20,20]
+        arrayvideo = [1,2,3]
+        
         for i in 0..<arrayActivityName.count{
-            let data = Activities(name: arrayActivityName[i], current: arraycurrent[i], max: arraymax[0])
+            let data = Activities(name: arrayActivityName[i], current: arraycurrent[i], max: arraymax[i],video: arrayvideo[i])
             activities.append(data)
         }
         
@@ -115,6 +122,7 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         }
         healthManager.execute(query)
     }
+ 
     func setlabel(value:Double)
     {
         self.kkalLabel.text = String("\(value) Kkal")
@@ -139,5 +147,17 @@ extension Workout: UITableViewDataSource, UITableViewDelegate {
         cell.nameLabel.text = activity.name
         cell.countLabel.text = String("\(activity.current) / \(activity.max) ")
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let videoindex = arrayvideo[indexPath.row]
+        guard let path = Bundle.main.path(forResource: "video\(videoindex)", ofType: "mp4") else { return }
+        let videoURL = URL(fileURLWithPath: path)
+        let player = AVPlayer(url: videoURL)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        
+        self.present(playerViewController, animated: true){
+            playerViewController.player?.play()
+    }
     }
 }
