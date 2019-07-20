@@ -182,7 +182,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="countLabel" destination="wo8-cF-TS0" id="N9N-1i-uBf"/>
+                                            <outlet property="countLabel" destination="wo8-cF-TS0" id="WCX-Vu-FlE"/>
                                             <outlet property="nameLabel" destination="rxD-rt-YIk" id="xpA-jx-vU5"/>
                                         </connections>
                                     </tableViewCell>
