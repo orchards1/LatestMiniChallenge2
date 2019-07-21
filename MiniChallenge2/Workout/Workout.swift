@@ -38,8 +38,25 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         return cell
     }
 
+    @IBOutlet weak var initialDate: UIImageView!
+    @IBOutlet weak var targetDate: UIImageView!
     @IBAction func refreshButtonDidTap(_ sender: Any) {
         fire()
+      
+            //Set Progress
+        var progress = UserDefaults.standard.float(forKey: "progress")
+            //Func animate progress movenya
+        UIView.animate(withDuration: 1.0) {
+            self.progressBar.setProgress(progress, animated: true)
+            //Func nambahin progress by 0.07 = 14 days
+        UserDefaults.standard.set(UserDefaults.standard.float(forKey: "progress") + 0.07 , forKey: "progress")
+            if(UserDefaults.standard.float(forKey: "progress") > 1.07)
+            {
+                self.targetDate.image = UIImage(named: "14active")
+            }
+            print(UserDefaults.standard.float(forKey: "progress"))
+        }
+        
     }
     @IBOutlet weak var kkalLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
@@ -52,13 +69,15 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     var activities = [Activities]()
     var today = Calendar.current
     var step: HKQuantityType? = HKObjectType.quantityType(forIdentifier: .stepCount)
+    
     @objc func fire()
     {
         let earlyDate = today.startOfDay(for: Date())
         fetchHeartRates(endTime: NSDate(), startTime: earlyDate as NSDate)
     }
     
-    override func viewDidLoad() {        UserDefaults.standard.set(true, forKey: "sudahmilih")
+    override func viewDidLoad() {
+        UserDefaults.standard.set(true, forKey: "sudahmilih")
                 super.viewDidLoad()
         fire()
         arrayActivityName = ["Olahraga1","Olahraga2","Olahraga3"]

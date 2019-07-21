@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        UserDefaults.standard.set(0.1, forKey: "progress")
         let storyboard = UIStoryboard(name: "MountainsList", bundle: nil)
         let vc1 = storyboard.instantiateInitialViewController()
 
