@@ -194,8 +194,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="My Progress" id="UbY-E3-NDa"/>
                     <connections>
+                        <outlet property="initialDate" destination="Gxi-eo-YuG" id="45c-3d-lp4"/>
                         <outlet property="kkalLabel" destination="xId-0H-Jkw" id="tx5-Aj-pMV"/>
                         <outlet property="progressBar" destination="FrI-XJ-5vs" id="azy-by-O8z"/>
+                        <outlet property="targetDate" destination="pRI-JY-Z3V" id="S5B-Wj-Lmc"/>
                         <outlet property="workoutCollectionView" destination="IL6-Lt-5g0" id="ICM-O8-PsL"/>
                         <outlet property="workoutTableView" destination="nAh-Bb-bD1" id="kSm-GP-L0C"/>
                     </connections>

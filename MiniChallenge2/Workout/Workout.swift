@@ -38,17 +38,30 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         return cell
     }
 
+    @IBOutlet weak var initialDate: UIImageView!
+    @IBOutlet weak var targetDate: UIImageView!
     @IBAction func refreshButtonDidTap(_ sender: Any) {
         fire()
-        UIView.animate(withDuration: 2.0) {
-            self.progressBar.setProgress(self.progress, animated: true)
+      
+            //Set Progress
+        var progress = UserDefaults.standard.float(forKey: "progress")
+            //Func animate progress movenya
+        UIView.animate(withDuration: 1.0) {
+            self.progressBar.setProgress(progress, animated: true)
+            //Func nambahin progress by 0.07 = 14 days
+        UserDefaults.standard.set(UserDefaults.standard.float(forKey: "progress") + 0.07 , forKey: "progress")
+            if(UserDefaults.standard.float(forKey: "progress") > 1.07)
+            {
+                self.targetDate.image = UIImage(named: "14active")
+            }
+            print(UserDefaults.standard.float(forKey: "progress"))
         }
+        
     }
     @IBOutlet weak var kkalLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var workoutCollectionView: UICollectionView!
     @IBOutlet weak var workoutTableView: UITableView!
-    var progress = UserDefaults.standard.float(forKey: "progress")
     let healthManager = HKHealthStore()
     var counts = 0.0
     var counts2 = 0.0
