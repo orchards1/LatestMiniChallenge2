@@ -14,8 +14,22 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MiniChallenge2_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Button" id="nKs-c1-Lex"/>
+                        <label alignment="left" text="RUN" id="6oW-IO-bcY">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                        </label>
+                        <button width="1" alignment="left" title="Start" id="wIJ-3U-vwj">
+                            <connections>
+                                <action selector="startButtonPressed" destination="AgC-eL-Hgc" id="rkQ-p0-2KL"/>
+                            </connections>
+                        </button>
+                        <timer alignment="left" textAlignment="left" id="LGZ-6T-Cag">
+                            <calendarUnit key="units" hour="YES" minute="YES"/>
+                        </timer>
                     </items>
+                    <connections>
+                        <outlet property="TimerLabel" destination="LGZ-6T-Cag" id="JgC-HV-sq2"/>
+                        <outlet property="startButton" destination="wIJ-3U-vwj" id="gEU-rf-tjl"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
