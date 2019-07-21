@@ -14,25 +14,54 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MiniChallenge2_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="RUN" id="6oW-IO-bcY">
-                            <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
-                        </label>
-                        <button width="1" alignment="left" title="Start" id="wIJ-3U-vwj">
+                        <button width="136" height="127" alignment="center" backgroundImage="start" id="nKs-c1-Lex">
                             <connections>
-                                <action selector="startButtonPressed" destination="AgC-eL-Hgc" id="rkQ-p0-2KL"/>
+                                <action selector="btnActStart" destination="AgC-eL-Hgc" id="7hi-mn-DjJ"/>
                             </connections>
                         </button>
-                        <timer alignment="left" textAlignment="left" id="LGZ-6T-Cag">
-                            <calendarUnit key="units" hour="YES" minute="YES"/>
-                        </timer>
+                        <label width="136" alignment="center" verticalAlignment="bottom" text="Start" textAlignment="center" id="ZXj-U8-M8Z"/>
                     </items>
                     <connections>
-                        <outlet property="TimerLabel" destination="LGZ-6T-Cag" id="JgC-HV-sq2"/>
-                        <outlet property="startButton" destination="wIJ-3U-vwj" id="gEU-rf-tjl"/>
+                        <outlet property="startButton" destination="nKs-c1-Lex" id="Gw4-N5-DYY"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="322"/>
+        </scene>
+        <!--page1-->
+        <scene sceneID="x35-DO-CDU">
+            <objects>
+                <controller identifier="page1" id="UyY-gP-vC1" customClass="AfterStartController" customModule="MiniChallenge2_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="54" alignment="center" text="0.00" textAlignment="center" id="02Z-uf-944">
+                            <fontDescription key="font" type="italicSystem" weight="bold" pointSize="55"/>
+                        </label>
+                        <label width="136" height="27" alignment="center" verticalAlignment="center" text="KILOMETERS" textAlignment="center" id="FP3-MQ-aU9"/>
+                        <timer alignment="center" verticalAlignment="center" id="Cj8-M8-VB8">
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                            <variation key="device=watch40mm">
+                                <calendarUnit key="units" minute="YES" second="YES"/>
+                            </variation>
+                            <variation key="device=watch44mm">
+                                <calendarUnit key="units" minute="YES" second="YES"/>
+                            </variation>
+                        </timer>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="BVl-NO-6cB">
+                            <items>
+                                <label width="75" height="28" alignment="right" verticalAlignment="bottom" text="Label" textAlignment="center" id="Phu-jq-Uaq"/>
+                                <label width="75" height="28" alignment="left" verticalAlignment="bottom" text="Label" textAlignment="center" id="uar-IM-kCg"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="bpmLabel" destination="Phu-jq-Uaq" id="8CY-0k-bsc"/>
+                        <outlet property="calorieLabel" destination="uar-IM-kCg" id="6EB-0D-ci2"/>
+                        <outlet property="distanceLabel" destination="02Z-uf-944" id="Bcu-Xo-l0x"/>
+                        <outlet property="timerLabel" destination="Cj8-M8-VB8" id="dji-Ya-rcH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="490" y="-59"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -56,14 +85,50 @@
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="MiniChallenge2_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="596" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
                 <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="MiniChallenge2_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="220" y="1116"/>
+        </scene>
+        <!--page2-->
+        <scene sceneID="YOM-NC-fku">
+            <objects>
+                <controller identifier="page2" id="IvG-8x-xQJ" customClass="PauseController" customModule="MiniChallenge2_WatchKit_Extension">
+                    <items>
+                        <button width="136" height="127" alignment="center" backgroundImage="pause" id="twK-kL-f4w">
+                            <connections>
+                                <action selector="btnActPause" destination="IvG-8x-xQJ" id="WTc-YM-rno"/>
+                            </connections>
+                        </button>
+                        <label width="136" alignment="center" verticalAlignment="bottom" text="Pause" textAlignment="center" id="Wri-R7-Hqf"/>
+                        <label alignment="left" text="Label" id="LGG-b9-ZqI"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="490" y="324"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="tCC-w1-cGC">
+            <objects>
+                <controller id="0aK-0d-Wln" customClass="InterfaceController" customModule="MiniChallenge2_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="136" height="127" alignment="center" backgroundImage="completed" id="VXn-58-Dkm">
+                            <connections>
+                                <action selector="btnActStart" destination="0aK-0d-Wln" id="DCx-hR-ngJ"/>
+                            </connections>
+                        </button>
+                        <label width="136" alignment="center" verticalAlignment="bottom" text="Completed!" textAlignment="center" id="Dee-dU-3Xp"/>
+                    </items>
+                    <connections>
+                        <outlet property="startButton" destination="VXn-58-Dkm" id="Aji-Xg-A0Q"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="763" y="322"/>
         </scene>
     </scenes>
 </document>

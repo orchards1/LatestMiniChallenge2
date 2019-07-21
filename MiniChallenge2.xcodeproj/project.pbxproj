@@ -11,8 +11,13 @@
 		45B32AB522DC714D00485C27 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B32AB422DC714D00485C27 /* Workout.swift */; };
 		45B32AEA22DF0EF400485C27 /* WorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B32AE822DF0EF400485C27 /* WorkoutCollectionViewCell.swift */; };
 		4B22F5FA22D87DB000602D3A /* MountainsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B22F5F922D87DAF00602D3A /* MountainsListViewController.swift */; };
+		4B62D90222E43B1C005E55ED /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B62D90122E43B1C005E55ED /* HealthKit.framework */; };
+		4B62D90422E43BD1005E55ED /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4B62D90322E43BD1005E55ED /* video1.mp4 */; };
+		4B62D90622E44313005E55ED /* AfterStartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62D90522E44313005E55ED /* AfterStartController.swift */; };
+		4B62D90822E44380005E55ED /* PauseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62D90722E44380005E55ED /* PauseController.swift */; };
 		4B7ADC2B22D8C393000C31ED /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7ADC2922D8C393000C31ED /* Mountain.swift */; };
 		4B7ADC2C22D8C393000C31ED /* MountainListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7ADC2A22D8C393000C31ED /* MountainListCollectionViewCell.swift */; };
+		4BD88D4622E471FE007AB178 /* TimeButtonClicked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD88D4522E471FE007AB178 /* TimeButtonClicked.swift */; };
 		B135A24222E2F481003E1EB2 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135A24122E2F481003E1EB2 /* Activities.swift */; };
 		B13B74C322D8B66E00812DE8 /* MountainsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13B74C222D8B66E00812DE8 /* MountainsDetail.storyboard */; };
 		B13B74C522D8B68F00812DE8 /* MountainsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13B74C422D8B68F00812DE8 /* MountainsDetailViewController.swift */; };
@@ -38,7 +43,6 @@
 		B14ABFDF22D75DAB00D38DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */; };
 		B162FFD822E308D90001383E /* WorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162FFD722E308D90001383E /* WorkoutTableViewCell.swift */; };
 		B162FFE122E313D30001383E /* videoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162FFE022E313D30001383E /* videoPlayerViewController.swift */; };
-		B162FFE222E315BB0001383E /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B162FFDB22E310AE0001383E /* video1.mp4 */; };
 		B1821B5C22E1D83B009F23C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1821B5B22E1D83B009F23C3 /* Assets.xcassets */; };
 		B1C09CB622DC776400612BB2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1C09CB422DC776400612BB2 /* Model.xcdatamodeld */; };
 		B1FE0DC022DAEAFF00873B5F /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FE0DBF22DAEAFF00873B5F /* GetStarted.swift */; };
@@ -105,8 +109,14 @@
 		45B32AB422DC714D00485C27 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		45B32AE822DF0EF400485C27 /* WorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCollectionViewCell.swift; sourceTree = "<group>"; };
 		4B22F5F922D87DAF00602D3A /* MountainsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsListViewController.swift; sourceTree = "<group>"; };
+		4B62D90022E43B1C005E55ED /* MiniChallenge2 WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MiniChallenge2 WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		4B62D90122E43B1C005E55ED /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		4B62D90322E43BD1005E55ED /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		4B62D90522E44313005E55ED /* AfterStartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterStartController.swift; sourceTree = "<group>"; };
+		4B62D90722E44380005E55ED /* PauseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseController.swift; sourceTree = "<group>"; };
 		4B7ADC2922D8C393000C31ED /* Mountain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
 		4B7ADC2A22D8C393000C31ED /* MountainListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountainListCollectionViewCell.swift; sourceTree = "<group>"; };
+		4BD88D4522E471FE007AB178 /* TimeButtonClicked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeButtonClicked.swift; sourceTree = "<group>"; };
 		B135A24122E2F481003E1EB2 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		B13B74C222D8B66E00812DE8 /* MountainsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MountainsDetail.storyboard; sourceTree = "<group>"; };
 		B13B74C422D8B68F00812DE8 /* MountainsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsDetailViewController.swift; sourceTree = "<group>"; };
@@ -141,7 +151,6 @@
 		B14ABFE022D75DAB00D38DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B14ABFE122D75DAB00D38DDB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		B162FFD722E308D90001383E /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewCell.swift; sourceTree = "<group>"; };
-		B162FFDB22E310AE0001383E /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video1.mp4; path = "../../Downloads/MiniChallenge2-master/video1.mp4"; sourceTree = "<group>"; };
 		B162FFE022E313D30001383E /* videoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoPlayerViewController.swift; sourceTree = "<group>"; };
 		B1821B5B22E1D83B009F23C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1C09CB522DC776400612BB2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -175,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B62D90222E43B1C005E55ED /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +207,7 @@
 		B13F08FF22E0775900EF2F07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B62D90122E43B1C005E55ED /* HealthKit.framework */,
 				B13F090022E0775900EF2F07 /* HealthKit.framework */,
 			);
 			name = Frameworks;
@@ -215,7 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				B1821B5B22E1D83B009F23C3 /* Assets.xcassets */,
-				B162FFDB22E310AE0001383E /* video1.mp4 */,
+				4B62D90322E43BD1005E55ED /* video1.mp4 */,
 				B14ABF9E22D75DA900D38DDB /* MiniChallenge2 */,
 				B14ABFB322D75DAA00D38DDB /* MiniChallenge2Tests */,
 				B14ABFBE22D75DAA00D38DDB /* MiniChallenge2UITests */,
@@ -286,7 +297,11 @@
 		B14ABFD722D75DAA00D38DDB /* MiniChallenge2 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4B62D90022E43B1C005E55ED /* MiniChallenge2 WatchKit Extension.entitlements */,
 				B14ABFD822D75DAA00D38DDB /* InterfaceController.swift */,
+				4BD88D4522E471FE007AB178 /* TimeButtonClicked.swift */,
+				4B62D90722E44380005E55ED /* PauseController.swift */,
+				4B62D90522E44313005E55ED /* AfterStartController.swift */,
 				B14ABFDA22D75DAA00D38DDB /* ExtensionDelegate.swift */,
 				B14ABFDC22D75DAA00D38DDB /* NotificationController.swift */,
 				B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */,
@@ -446,6 +461,11 @@
 					};
 					B14ABFD222D75DAA00D38DDB = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -476,7 +496,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B162FFE222E315BB0001383E /* video1.mp4 in Resources */,
+				4B62D90422E43BD1005E55ED /* video1.mp4 in Resources */,
 				45B32AB322DC5BDD00485C27 /* Workout.storyboard in Resources */,
 				B142A97422D87FC80071D2DA /* Slide.xib in Resources */,
 				B14ABFAA22D75DA900D38DDB /* LaunchScreen.storyboard in Resources */,
@@ -564,8 +584,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B62D90822E44380005E55ED /* PauseController.swift in Sources */,
 				B14ABFDD22D75DAA00D38DDB /* NotificationController.swift in Sources */,
+				4B62D90622E44313005E55ED /* AfterStartController.swift in Sources */,
 				B14ABFDB22D75DAA00D38DDB /* ExtensionDelegate.swift in Sources */,
+				4BD88D4622E471FE007AB178 /* TimeButtonClicked.swift in Sources */,
 				B14ABFD922D75DAA00D38DDB /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -743,15 +766,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "MiniChallenge2 WatchKit Extension/MiniChallenge2 WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				DEVELOPMENT_TEAM = BW4269VNF7;
 				INFOPLIST_FILE = "MiniChallenge2 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = marcel.MiniChallenge2.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -765,15 +789,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "MiniChallenge2 WatchKit Extension/MiniChallenge2 WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				DEVELOPMENT_TEAM = BW4269VNF7;
 				INFOPLIST_FILE = "MiniChallenge2 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = marcel.MiniChallenge2.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -789,10 +814,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				DEVELOPMENT_TEAM = BW4269VNF7;
 				IBSC_MODULE = MiniChallenge2_WatchKit_Extension;
 				INFOPLIST_FILE = "MiniChallenge2 WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = marcel.MiniChallenge2.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -808,10 +833,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				DEVELOPMENT_TEAM = BW4269VNF7;
 				IBSC_MODULE = MiniChallenge2_WatchKit_Extension;
 				INFOPLIST_FILE = "MiniChallenge2 WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = marcel.MiniChallenge2.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -828,13 +853,13 @@
 				CODE_SIGN_ENTITLEMENTS = MiniChallenge2/MiniChallenge2.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				DEVELOPMENT_TEAM = BW4269VNF7;
 				INFOPLIST_FILE = MiniChallenge2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2;
+				PRODUCT_BUNDLE_IDENTIFIER = marcel.MiniChallenge2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -849,13 +874,13 @@
 				CODE_SIGN_ENTITLEMENTS = MiniChallenge2/MiniChallenge2.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				DEVELOPMENT_TEAM = BW4269VNF7;
 				INFOPLIST_FILE = MiniChallenge2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2;
+				PRODUCT_BUNDLE_IDENTIFIER = marcel.MiniChallenge2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -869,7 +894,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				DEVELOPMENT_TEAM = BW4269VNF7;
 				INFOPLIST_FILE = MiniChallenge2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -890,7 +915,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				DEVELOPMENT_TEAM = BW4269VNF7;
 				INFOPLIST_FILE = MiniChallenge2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -910,7 +935,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				DEVELOPMENT_TEAM = BW4269VNF7;
 				INFOPLIST_FILE = MiniChallenge2UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -930,7 +955,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8U4NGP5AAN;
+				DEVELOPMENT_TEAM = BW4269VNF7;
 				INFOPLIST_FILE = MiniChallenge2UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,5 +1,6 @@
 import UIKit
 import HealthKit
+import CoreMotion
 
 class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     
@@ -30,6 +31,11 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        CMPedometer.isStepCountingAvailable()
+        CMPedometer.isDistanceAvailable()
+        CMPedometer.isFloorCountingAvailable()
+        CMPedometer.isPaceAvailable()
+        CMPedometer.isCadenceAvailable()
         checkHealthKitAuthorization()
         nextButton.isHidden = true
         slides = createSlides()

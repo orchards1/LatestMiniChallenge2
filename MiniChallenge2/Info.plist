@@ -4,6 +4,9 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSMotionUsageDescription</key>
+	<string>We need to access your movement to know better your Finess Activity
+</string>
 	<key>CFBundleDisplayName</key>
 	<string>Hikenastics</string>
 	<key>CFBundleExecutable</key>
