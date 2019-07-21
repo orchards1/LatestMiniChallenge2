@@ -106,11 +106,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="136"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FrI-XJ-5vs">
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FrI-XJ-5vs">
                                                 <rect key="frame" x="62" y="29" width="290" height="3"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </progressView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10active" translatesAutoresizingMaskIntoConstraints="NO" id="Gxi-eo-YuG">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1active" translatesAutoresizingMaskIntoConstraints="NO" id="Gxi-eo-YuG">
                                                 <rect key="frame" x="14" y="13" width="34" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -134,7 +134,7 @@
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10inactive" translatesAutoresizingMaskIntoConstraints="NO" id="pRI-JY-Z3V">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="14inactive" translatesAutoresizingMaskIntoConstraints="NO" id="pRI-JY-Z3V">
                                                 <rect key="frame" x="366" y="13" width="34" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -224,7 +224,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="10active" width="44" height="44"/>
-        <image name="10inactive" width="44" height="44"/>
+        <image name="14inactive" width="44" height="44"/>
+        <image name="1active" width="44" height="44"/>
     </resources>
 </document>

@@ -40,11 +40,15 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 
     @IBAction func refreshButtonDidTap(_ sender: Any) {
         fire()
+        UIView.animate(withDuration: 2.0) {
+            self.progressBar.setProgress(self.progress, animated: true)
+        }
     }
     @IBOutlet weak var kkalLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var workoutCollectionView: UICollectionView!
     @IBOutlet weak var workoutTableView: UITableView!
+    var progress = UserDefaults.standard.float(forKey: "progress")
     let healthManager = HKHealthStore()
     var counts = 0.0
     var counts2 = 0.0
@@ -52,13 +56,15 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     var activities = [Activities]()
     var today = Calendar.current
     var step: HKQuantityType? = HKObjectType.quantityType(forIdentifier: .stepCount)
+    
     @objc func fire()
     {
         let earlyDate = today.startOfDay(for: Date())
         fetchHeartRates(endTime: NSDate(), startTime: earlyDate as NSDate)
     }
     
-    override func viewDidLoad() {        UserDefaults.standard.set(true, forKey: "sudahmilih")
+    override func viewDidLoad() {
+        UserDefaults.standard.set(true, forKey: "sudahmilih")
                 super.viewDidLoad()
         fire()
         arrayActivityName = ["Olahraga1","Olahraga2","Olahraga3"]
