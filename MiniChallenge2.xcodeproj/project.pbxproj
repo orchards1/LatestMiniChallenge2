@@ -21,11 +21,7 @@
 		4B7ADC2B22D8C393000C31ED /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7ADC2922D8C393000C31ED /* Mountain.swift */; };
 		4B7ADC2C22D8C393000C31ED /* MountainListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7ADC2A22D8C393000C31ED /* MountainListCollectionViewCell.swift */; };
 		4BD88D4622E471FE007AB178 /* TimeButtonClicked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD88D4522E471FE007AB178 /* TimeButtonClicked.swift */; };
-		B11CC8E822E57E6C002EDA51 /* video2.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B11CC8E422E57E6B002EDA51 /* video2.MOV */; };
-		B11CC8E922E57E6C002EDA51 /* video1.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B11CC8E522E57E6B002EDA51 /* video1.MOV */; };
-		B11CC8EA22E57E6C002EDA51 /* video4.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B11CC8E622E57E6B002EDA51 /* video4.MOV */; };
-		B11CC8EB22E57E6C002EDA51 /* video3.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B11CC8E722E57E6B002EDA51 /* video3.MOV */; };
-		B11CC8ED22E59434002EDA51 /* WorkoutRunController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CC8EC22E59434002EDA51 /* WorkoutRunController.swift */; };
+		B11CC8EF22E5ACD6002EDA51 /* runViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CC8EE22E5ACD6002EDA51 /* runViewController.swift */; };
 		B135A24222E2F481003E1EB2 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135A24122E2F481003E1EB2 /* Activities.swift */; };
 		B13B74C322D8B66E00812DE8 /* MountainsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13B74C222D8B66E00812DE8 /* MountainsDetail.storyboard */; };
 		B13B74C522D8B68F00812DE8 /* MountainsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13B74C422D8B68F00812DE8 /* MountainsDetailViewController.swift */; };
@@ -128,11 +124,7 @@
 		4B7ADC2922D8C393000C31ED /* Mountain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
 		4B7ADC2A22D8C393000C31ED /* MountainListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountainListCollectionViewCell.swift; sourceTree = "<group>"; };
 		4BD88D4522E471FE007AB178 /* TimeButtonClicked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeButtonClicked.swift; sourceTree = "<group>"; };
-		B11CC8E422E57E6B002EDA51 /* video2.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = video2.MOV; path = "../../Downloads/Ori videos/video2.MOV"; sourceTree = "<group>"; };
-		B11CC8E522E57E6B002EDA51 /* video1.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = video1.MOV; path = "../../Downloads/Ori videos/video1.MOV"; sourceTree = "<group>"; };
-		B11CC8E622E57E6B002EDA51 /* video4.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = video4.MOV; path = "../../Downloads/Ori videos/video4.MOV"; sourceTree = "<group>"; };
-		B11CC8E722E57E6B002EDA51 /* video3.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = video3.MOV; path = "../../Downloads/Ori videos/video3.MOV"; sourceTree = "<group>"; };
-		B11CC8EC22E59434002EDA51 /* WorkoutRunController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRunController.swift; sourceTree = "<group>"; };
+		B11CC8EE22E5ACD6002EDA51 /* runViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runViewController.swift; sourceTree = "<group>"; };
 		B135A24122E2F481003E1EB2 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		B13B74C222D8B66E00812DE8 /* MountainsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MountainsDetail.storyboard; sourceTree = "<group>"; };
 		B13B74C422D8B68F00812DE8 /* MountainsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsDetailViewController.swift; sourceTree = "<group>"; };
@@ -213,10 +205,10 @@
 				B162FFE022E313D30001383E /* videoPlayerViewController.swift */,
 				B162FFD722E308D90001383E /* WorkoutTableViewCell.swift */,
 				45B32AB222DC5BDD00485C27 /* Workout.storyboard */,
+				B11CC8EE22E5ACD6002EDA51 /* runViewController.swift */,
 				45B32AB422DC714D00485C27 /* Workout.swift */,
 				45B32AE822DF0EF400485C27 /* WorkoutCollectionViewCell.swift */,
 				B135A24122E2F481003E1EB2 /* Activities.swift */,
-				B11CC8EC22E59434002EDA51 /* WorkoutRunController.swift */,
 			);
 			path = Workout;
 			sourceTree = "<group>";
@@ -577,13 +569,13 @@
 				45B32AB522DC714D00485C27 /* Workout.swift in Sources */,
 				B162FFE122E313D30001383E /* videoPlayerViewController.swift in Sources */,
 				B142A97222D87FBB0071D2DA /* Slide.swift in Sources */,
+				B11CC8EF22E5ACD6002EDA51 /* runViewController.swift in Sources */,
 				4B7ADC2B22D8C393000C31ED /* Mountain.swift in Sources */,
 				B14ABFA222D75DA900D38DDB /* ViewController.swift in Sources */,
 				4B7ADC2C22D8C393000C31ED /* MountainListCollectionViewCell.swift in Sources */,
 				B1C09CB622DC776400612BB2 /* Model.xcdatamodeld in Sources */,
 				45B32AEA22DF0EF400485C27 /* WorkoutCollectionViewCell.swift in Sources */,
 				B14ABFA022D75DA900D38DDB /* AppDelegate.swift in Sources */,
-				B11CC8ED22E59434002EDA51 /* WorkoutRunController.swift in Sources */,
 				4B22F5FA22D87DB000602D3A /* MountainsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -792,14 +784,14 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "MiniChallenge2 WatchKit Extension/MiniChallenge2 WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
 				INFOPLIST_FILE = "MiniChallenge2 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = marcel.MiniChallenge2.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = NO;
@@ -815,14 +807,14 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "MiniChallenge2 WatchKit Extension/MiniChallenge2 WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
 				INFOPLIST_FILE = "MiniChallenge2 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = marcel.MiniChallenge2.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = NO;
@@ -838,10 +830,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
 				IBSC_MODULE = MiniChallenge2_WatchKit_Extension;
 				INFOPLIST_FILE = "MiniChallenge2 WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = marcel.MiniChallenge2.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = NO;
@@ -857,10 +849,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
 				IBSC_MODULE = MiniChallenge2_WatchKit_Extension;
 				INFOPLIST_FILE = "MiniChallenge2 WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = marcel.MiniChallenge2.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = NO;
@@ -877,13 +869,13 @@
 				CODE_SIGN_ENTITLEMENTS = MiniChallenge2/MiniChallenge2.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
 				INFOPLIST_FILE = MiniChallenge2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = marcel.MiniChallenge2;
+				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -898,13 +890,13 @@
 				CODE_SIGN_ENTITLEMENTS = MiniChallenge2/MiniChallenge2.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
 				INFOPLIST_FILE = MiniChallenge2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = marcel.MiniChallenge2;
+				PRODUCT_BUNDLE_IDENTIFIER = michael.MiniChallenge2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -918,7 +910,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
 				INFOPLIST_FILE = MiniChallenge2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -939,7 +931,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
 				INFOPLIST_FILE = MiniChallenge2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -959,7 +951,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
 				INFOPLIST_FILE = MiniChallenge2UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -979,7 +971,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BW4269VNF7;
+				DEVELOPMENT_TEAM = 8U4NGP5AAN;
 				INFOPLIST_FILE = MiniChallenge2UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

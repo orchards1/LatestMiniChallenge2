@@ -51,10 +51,41 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         if indexPath.row == 4 {
-//            let runViewController = UIViewController()
-            
-            
+            UserDefaults.standard.set(true, forKey: "pindah")
+            //Set Progress
+            var progress = UserDefaults.standard.float(forKey: "progress")
+            //Func animate progress movenya
+            UIView.animate(withDuration: 1.0) {
+                self.progressBar.setProgress(progress, animated: true)
+                //Func nambahin progress by 0.07 = 14 days
+                UserDefaults.standard.set(0.0, forKey: "progress")
+                if(UserDefaults.standard.float(forKey: "progress") > 1.07)
+                {
+                    self.targetDate.image = UIImage(named: "14active")
+                }
+                print(UserDefaults.standard.float(forKey: "progress"))
+            }
         }
+        else if indexPath.row == 3
+        {
+            UserDefaults.standard.set(false, forKey: "pindah")
+            //Set Progress
+            var progress = UserDefaults.standard.float(forKey: "progress")
+            //Func animate progress movenya
+            UIView.animate(withDuration: 1.0) {
+                self.progressBar.setProgress(progress, animated: true)
+                //Func nambahin progress by 0.07 = 14 days
+                UserDefaults.standard.set(0.07, forKey: "progress")
+                if(UserDefaults.standard.float(forKey: "progress") > 1.07)
+                {
+                    self.targetDate.image = UIImage(named: "14active")
+                }
+                print(UserDefaults.standard.float(forKey: "progress"))
+            }
+        }
+        workoutCollectionView.reloadData()
+        workoutTableView.reloadData()
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -64,8 +95,24 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         if (indexPath.row < 3 || indexPath.row > 16) {
             cell.daysIcon.backgroundColor = .clear
         } else {
-            cell.daysIcon.image = UIImage(named: "\(indexPath.row - 2)inactive")
-            
+            if(UserDefaults.standard.bool(forKey: "pindah") == true)
+            {
+                //untuk buat no 2 jadi ijo
+                if indexPath.row == 4 {
+                    cell.daysIcon.image = UIImage(named: "2active")
+                } else {
+                    cell.daysIcon.image = UIImage(named: "\(indexPath.row - 2)inactive")
+                }
+                
+            }else{
+            //untuk buat no 1 jadi ijo
+            if indexPath.row == 3 {
+                cell.daysIcon.image = UIImage(named: "1active")
+            } else {
+                cell.daysIcon.image = UIImage(named: "\(indexPath.row - 2)inactive")
+            }
+                
+            }
         }
         return cell
     }
@@ -74,21 +121,6 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     @IBOutlet weak var targetDate: UIImageView!
     @IBAction func refreshButtonDidTap(_ sender: Any) {
         fire()
-      
-            //Set Progress
-        var progress = UserDefaults.standard.float(forKey: "progress")
-            //Func animate progress movenya
-        UIView.animate(withDuration: 1.0) {
-            self.progressBar.setProgress(progress, animated: true)
-            //Func nambahin progress by 0.07 = 14 days
-        UserDefaults.standard.set(UserDefaults.standard.float(forKey: "progress") + 0.07 , forKey: "progress")
-            if(UserDefaults.standard.float(forKey: "progress") > 1.07)
-            {
-                self.targetDate.image = UIImage(named: "14active")
-            }
-            print(UserDefaults.standard.float(forKey: "progress"))
-        }
-        
     }
     @IBOutlet weak var kkalLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
@@ -183,17 +215,35 @@ extension Workout: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        if(UserDefaults.standard.bool(forKey: "pindah"))
+        {
+            return 1
+        }
+        else
+        {
+            return 4
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if(UserDefaults.standard.bool(forKey: "pindah"))
+        {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! WorkoutTableViewCell
+            
+            cell.nameLabel.text = "Run"
+            cell.countLabel.text = "123 m"
+            return cell
+        }
+            
+        else{
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! WorkoutTableViewCell
         
         let activity: Activities
             activity = activities[indexPath.row]
         cell.nameLabel.text = activity.name
-        cell.countLabel.text = String("\(activity.current) / \(activity.max) ")
+        cell.countLabel.text = String("\(activity.current) / \(activity.max) times")
         return cell
+        }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let videoindex = arrayvideo[indexPath.row]
@@ -203,10 +253,17 @@ extension Workout: UITableViewDataSource, UITableViewDelegate {
         let playerViewController = AVPlayerViewController()
         playerViewController.player = player
         
-        self.present(playerViewController, animated: true){
+        if(UserDefaults.standard.bool(forKey: "pindah") == true)
+        {
+            performSegue(withIdentifier: "runview", sender: self)
+        }
+        else
+        {
+            self.present(playerViewController, animated: true){
             NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: playerViewController.player?.currentItem, queue: .main) { [weak self] _ in
                 playerViewController.player?.seek(to: CMTime.zero)
                 playerViewController.player?.play()
+                }
             }
         }
     }
