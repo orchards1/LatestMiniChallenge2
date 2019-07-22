@@ -4,9 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>NSMotionUsageDescription</key>
-	<string>We need to access your movement to know better your Finess Activity
-</string>
 	<key>CFBundleDisplayName</key>
 	<string>Hikenastics</string>
 	<key>CFBundleExecutable</key>
@@ -29,6 +26,9 @@
 	<string>We need your Health Data to improve your experience using our app.</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>We need to access your Health Data to track your Workout progress.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>We need to access your movement to know better your Finess Activity
+</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
