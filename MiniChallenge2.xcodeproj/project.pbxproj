@@ -21,7 +21,8 @@
 		4B7ADC2B22D8C393000C31ED /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7ADC2922D8C393000C31ED /* Mountain.swift */; };
 		4B7ADC2C22D8C393000C31ED /* MountainListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7ADC2A22D8C393000C31ED /* MountainListCollectionViewCell.swift */; };
 		4BD88D4622E471FE007AB178 /* TimeButtonClicked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD88D4522E471FE007AB178 /* TimeButtonClicked.swift */; };
-		B11CC8EF22E5ACD6002EDA51 /* runViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CC8EE22E5ACD6002EDA51 /* runViewController.swift */; };
+		4BF2039322E5AF570093120B /* CompleteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF2039222E5AF570093120B /* CompleteController.swift */; };
+		B11CC8ED22E59434002EDA51 /* WorkoutRunController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CC8EC22E59434002EDA51 /* WorkoutRunController.swift */; };
 		B135A24222E2F481003E1EB2 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135A24122E2F481003E1EB2 /* Activities.swift */; };
 		B13B74C322D8B66E00812DE8 /* MountainsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13B74C222D8B66E00812DE8 /* MountainsDetail.storyboard */; };
 		B13B74C522D8B68F00812DE8 /* MountainsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13B74C422D8B68F00812DE8 /* MountainsDetailViewController.swift */; };
@@ -124,7 +125,8 @@
 		4B7ADC2922D8C393000C31ED /* Mountain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
 		4B7ADC2A22D8C393000C31ED /* MountainListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountainListCollectionViewCell.swift; sourceTree = "<group>"; };
 		4BD88D4522E471FE007AB178 /* TimeButtonClicked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeButtonClicked.swift; sourceTree = "<group>"; };
-		B11CC8EE22E5ACD6002EDA51 /* runViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runViewController.swift; sourceTree = "<group>"; };
+		4BF2039222E5AF570093120B /* CompleteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteController.swift; sourceTree = "<group>"; };
+		B11CC8EC22E59434002EDA51 /* WorkoutRunController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRunController.swift; sourceTree = "<group>"; };
 		B135A24122E2F481003E1EB2 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		B13B74C222D8B66E00812DE8 /* MountainsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MountainsDetail.storyboard; sourceTree = "<group>"; };
 		B13B74C422D8B68F00812DE8 /* MountainsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsDetailViewController.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				4BD88D4522E471FE007AB178 /* TimeButtonClicked.swift */,
 				4B62D90722E44380005E55ED /* PauseController.swift */,
 				4B62D90522E44313005E55ED /* AfterStartController.swift */,
+				4BF2039222E5AF570093120B /* CompleteController.swift */,
 				B14ABFDA22D75DAA00D38DDB /* ExtensionDelegate.swift */,
 				B14ABFDC22D75DAA00D38DDB /* NotificationController.swift */,
 				B14ABFDE22D75DAB00D38DDB /* Assets.xcassets */,
@@ -600,6 +603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF2039322E5AF570093120B /* CompleteController.swift in Sources */,
 				4B62D90822E44380005E55ED /* PauseController.swift in Sources */,
 				B14ABFDD22D75DAA00D38DDB /* NotificationController.swift in Sources */,
 				4B62D90622E44313005E55ED /* AfterStartController.swift in Sources */,

@@ -38,6 +38,8 @@ class AfterStartController: WKInterfaceController {
 //
 //        attributedText.addAttributes([NSAttributedString.Key.font: UIFont.italicSystemFont(ofSize: 50.0)], range: NSRange(location: 1, length: 5))
         
+        configuration.activityType = .running
+        
         let earlyDate = calendar.startOfDay(for: Date())
         
         CMPedometer.isDistanceAvailable()
@@ -57,7 +59,6 @@ class AfterStartController: WKInterfaceController {
         }
         
         checkHealthKitAuthorization()
-        print(HKObjectType.quantityType(forIdentifier: .heartRate))
         
 //        fetchDistance(endTime: NSDate() , startTime: calendar.startOfDay(for: Date()) as NSDate)
         fetchCalorie(endTime: NSDate(), startTime: calendar.startOfDay(for: Date()) as NSDate)
@@ -80,7 +81,6 @@ class AfterStartController: WKInterfaceController {
 
     
     func checkHealthKitAuthorization() {
-        configuration.activityType = .running
         
         if HKHealthStore.isHealthDataAvailable(){
             let infoToRead = Set([HKSampleType.quantityType(forIdentifier: .distanceWalkingRunning), HKSampleType.quantityType(forIdentifier: .activeEnergyBurned), HKSampleType.quantityType(forIdentifier: .heartRate), HKSampleType.quantityType(forIdentifier: .stepCount)])
