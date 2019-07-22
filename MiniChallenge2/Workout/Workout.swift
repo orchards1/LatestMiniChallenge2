@@ -80,10 +80,10 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         UserDefaults.standard.set(true, forKey: "sudahmilih")
                 super.viewDidLoad()
         fire()
-        arrayActivityName = ["Olahraga1","Olahraga2","Olahraga3"]
-        arraycurrent = [0,0,0]
-        arraymax = [20,20,20]
-        arrayvideo = [1,2,3]
+        arrayActivityName = ["Hip Roll","Jump Squat","Side Plank","Stairs"]
+        arraycurrent = [10,14,7,20 ]
+        arraymax = [30,30,30,50]
+        arrayvideo = [1,2,3,4]
         
         for i in 0..<arrayActivityName.count{
             let data = Activities(name: arrayActivityName[i], current: arraycurrent[i], max: arraymax[i],video: arrayvideo[i])
@@ -155,7 +155,7 @@ extension Workout: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -169,7 +169,7 @@ extension Workout: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let videoindex = arrayvideo[indexPath.row]
-        guard let path = Bundle.main.path(forResource: "video\(videoindex)", ofType: "mp4") else { return }
+        guard let path = Bundle.main.path(forResource: "video\(videoindex)", ofType: "MOV") else { return }
         let videoURL = URL(fileURLWithPath: path)
         let player = AVPlayer(url: videoURL)
         let playerViewController = AVPlayerViewController()

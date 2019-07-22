@@ -155,13 +155,11 @@ You’ll need to have a long breath to overcome this path</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lud-dl-JMT">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Path start to get steeper." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lud-dl-JMT" userLabel="B Started to get steeper.">
                                                 <rect key="frame" x="20" y="459" width="374" height="77"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="77" id="lj2-6z-OIw"/>
                                                 </constraints>
-                                                <string key="text">B
-Started to get steeper.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -170,17 +168,18 @@ Started to get steeper.</string>
                                                 <rect key="frame" x="20" y="544" width="367" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">C
-Extreme path, you’ll need to cross a steep cliff that only dibatasi with a rope. It is a narrow path next to a hot water bath.</string>
+Extreme path, you’ll need to cross a steep cliff that is blocked with a rope. It is a narrow path next to a hot water bath.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <string key="userLabel">C Extreme path, you’ll need to cross a steep cliff that only dibatasi with a rope. It is a narrow path next to a hot water bath.</string>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piP-e4-fEG">
                                                 <rect key="frame" x="20" y="659" width="350" height="141"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">D
 The steepest path among all trails. You will need to cross a rock climbing path which is known as “Tanjakan Setan”.
-You will need to have lower leg strengths, endurance in glutes and quad muscles.</string>
+Lower leg strengths and endurance in glutes and quad muscles.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
