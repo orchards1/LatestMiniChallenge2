@@ -9,10 +9,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--pageStart-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MiniChallenge2_WatchKit_App" customModuleProvider="target">
+                <controller identifier="pageStart" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MiniChallenge2_WatchKit_App" customModuleProvider="target">
                     <items>
                         <button width="136" height="127" alignment="center" backgroundImage="start" id="nKs-c1-Lex">
                             <connections>
@@ -99,35 +99,29 @@
             <objects>
                 <controller identifier="page2" id="IvG-8x-xQJ" customClass="PauseController" customModule="MiniChallenge2_WatchKit_Extension">
                     <items>
-                        <button width="136" height="127" alignment="center" backgroundImage="pause" id="twK-kL-f4w">
+                        <button width="136" height="127" alignment="center" backgroundImage="stop" id="twK-kL-f4w">
                             <connections>
                                 <action selector="btnActPause" destination="IvG-8x-xQJ" id="WTc-YM-rno"/>
                             </connections>
                         </button>
-                        <label width="136" alignment="center" verticalAlignment="bottom" text="Pause" textAlignment="center" id="Wri-R7-Hqf"/>
+                        <label width="136" alignment="center" verticalAlignment="bottom" text="End Workout" textAlignment="center" id="Wri-R7-Hqf"/>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="490" y="324"/>
         </scene>
-        <!--Interface Controller-->
+        <!--pageComplete-->
         <scene sceneID="tCC-w1-cGC">
             <objects>
-                <controller id="0aK-0d-Wln" customClass="InterfaceController" customModule="MiniChallenge2_WatchKit_App" customModuleProvider="target">
+                <controller identifier="pageComplete" id="0aK-0d-Wln" customClass="InterfaceController" customModule="MiniChallenge2_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="136" height="127" alignment="center" backgroundImage="completed" id="VXn-58-Dkm">
-                            <connections>
-                                <action selector="btnActStart" destination="0aK-0d-Wln" id="DCx-hR-ngJ"/>
-                            </connections>
-                        </button>
-                        <label width="136" alignment="center" verticalAlignment="bottom" text="Completed!" textAlignment="center" id="Dee-dU-3Xp"/>
+                        <label width="136" alignment="center" verticalAlignment="center" text="Completed!" textAlignment="center" id="Dee-dU-3Xp"/>
+                        <label width="136" alignment="center" verticalAlignment="bottom" text="Check your phone for your workout summary!" textAlignment="center" numberOfLines="3" id="g7x-8o-dvv"/>
+                        <imageView width="123" height="123" alignment="center" image="completed" id="1cC-zg-LBv"/>
                     </items>
-                    <connections>
-                        <outlet property="startButton" destination="VXn-58-Dkm" id="Aji-Xg-A0Q"/>
-                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="763" y="322"/>
+            <point key="canvasLocation" x="763" y="316.5"/>
         </scene>
     </scenes>
 </document>
