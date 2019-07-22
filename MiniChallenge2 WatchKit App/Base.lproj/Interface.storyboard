@@ -105,7 +105,6 @@
                             </connections>
                         </button>
                         <label width="136" alignment="center" verticalAlignment="bottom" text="Pause" textAlignment="center" id="Wri-R7-Hqf"/>
-                        <label alignment="left" text="Label" id="LGG-b9-ZqI"/>
                     </items>
                 </controller>
             </objects>

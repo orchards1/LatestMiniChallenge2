@@ -8,8 +8,26 @@
 
 import WatchKit
 import UIKit
+import WatchConnectivity
 
-class PauseController: WKInterfaceController {
+class PauseController: WKInterfaceController, WCSessionDelegate {
+    
+    
+    
+    let session = WCSession.default
+    let testing = String()
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        if activationState == .activated{
+            do {
+                try session.updateApplicationContext(["" : (Any).self])
+            } catch {
+                print("Something went wrong")
+            }
+        }
+        
+    }
+    
+    
     
     var afterStartController = AfterStartController()
     
@@ -17,6 +35,8 @@ class PauseController: WKInterfaceController {
         super.awake(withContext: context)
         // Configure interface objects here.
         self.setTitle(context as? String)
+        session.delegate = self
+        session.activate()
     }
     
     override func willActivate() {
@@ -34,5 +54,16 @@ class PauseController: WKInterfaceController {
        presentController(withName: "page1", context: "Done")
     }
     
+//    func sendGyroAccData() {
+//        
+//        if self.session.isReachable {
+//            let jsonData = try! JSONEncoder().encode(AfterStartController.)
+//            self.session.sendMessageData(jsonData, replyHandler: { (data) in
+//                
+//            }) { (error) in
+//                self.titleLabel.setText("Error: \(error)")
+//            }
+//        }
+//    }
     
 }
