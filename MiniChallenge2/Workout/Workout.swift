@@ -10,12 +10,35 @@ import UIKit
 import HealthKit
 import AVKit
 import AVFoundation
+import WatchConnectivity
 
-class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, WCSessionDelegate {
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        let receivedGlobal = applicationContext["my_global"] as? String
+    }
     var arrayActivityName = [String]()
     var arraycurrent = [Int]()
     var arraymax = [Int]()
     var arrayvideo = [Int]()
+    
+    var session: WCSession?
+    var wcSessionActivationCompletion : ((WCSession)->Void)?
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //        return CGSize(width: collectionView.frame.width / 5, height: collectionView.frame.height / 4.5)
         return CGSize(width: 50, height: 50)
