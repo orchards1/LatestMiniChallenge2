@@ -25,6 +25,15 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         return 20
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if indexPath.row == 4 {
+//            let runViewController = UIViewController()
+            
+            
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! WorkoutCollectionViewCell
@@ -80,24 +89,21 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         UserDefaults.standard.set(true, forKey: "sudahmilih")
                 super.viewDidLoad()
         fire()
-        arrayActivityName = ["Hip Roll","Jump Squat","Side Plank","Stairs"]
-        arraycurrent = [10,14,7,20 ]
-        arraymax = [30,30,30,50]
-        arrayvideo = [1,2,3,4]
+        arrayActivityName = ["Hip Roll","Jump Squat","Side Plank","Stairs","Run"]
+        arraycurrent = [10,17,7,14,0]
+        arraymax = [15,20,20,15,100]
+        arrayvideo = [1,2,3,4,0]
         
         for i in 0..<arrayActivityName.count{
             let data = Activities(name: arrayActivityName[i], current: arraycurrent[i], max: arraymax[i],video: arrayvideo[i])
             activities.append(data)
         }
         
-        
-        
         // Progress Bar Customization
         self.progressBar.tintColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
         self.progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 3)
         self.progressBar.layer.cornerRadius = 1.5
         self.progressBar.clipsToBounds = true
-        
         
         // Collection View Cell (Days Icon)
         workoutCollectionView.delegate = self
@@ -113,7 +119,6 @@ class Workout: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     class func authorizeHealthKit(completion: @escaping (Bool, Error?) -> Swift.Void) {
         
     }
-
 
     func fetchHeartRates(endTime: NSDate, startTime: NSDate){
         counts = 0.0
@@ -176,7 +181,10 @@ extension Workout: UITableViewDataSource, UITableViewDelegate {
         playerViewController.player = player
         
         self.present(playerViewController, animated: true){
-            playerViewController.player?.play()
-    }
+            NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: playerViewController.player?.currentItem, queue: .main) { [weak self] _ in
+                playerViewController.player?.seek(to: CMTime.zero)
+                playerViewController.player?.play()
+            }
+        }
     }
 }

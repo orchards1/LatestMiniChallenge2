@@ -21,6 +21,7 @@
 		B11CC8E922E57E6C002EDA51 /* video1.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B11CC8E522E57E6B002EDA51 /* video1.MOV */; };
 		B11CC8EA22E57E6C002EDA51 /* video4.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B11CC8E622E57E6B002EDA51 /* video4.MOV */; };
 		B11CC8EB22E57E6C002EDA51 /* video3.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B11CC8E722E57E6B002EDA51 /* video3.MOV */; };
+		B11CC8ED22E59434002EDA51 /* WorkoutRunController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CC8EC22E59434002EDA51 /* WorkoutRunController.swift */; };
 		B135A24222E2F481003E1EB2 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135A24122E2F481003E1EB2 /* Activities.swift */; };
 		B13B74C322D8B66E00812DE8 /* MountainsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13B74C222D8B66E00812DE8 /* MountainsDetail.storyboard */; };
 		B13B74C522D8B68F00812DE8 /* MountainsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13B74C422D8B68F00812DE8 /* MountainsDetailViewController.swift */; };
@@ -123,6 +124,7 @@
 		B11CC8E522E57E6B002EDA51 /* video1.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = video1.MOV; path = "../../Downloads/Ori videos/video1.MOV"; sourceTree = "<group>"; };
 		B11CC8E622E57E6B002EDA51 /* video4.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = video4.MOV; path = "../../Downloads/Ori videos/video4.MOV"; sourceTree = "<group>"; };
 		B11CC8E722E57E6B002EDA51 /* video3.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = video3.MOV; path = "../../Downloads/Ori videos/video3.MOV"; sourceTree = "<group>"; };
+		B11CC8EC22E59434002EDA51 /* WorkoutRunController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRunController.swift; sourceTree = "<group>"; };
 		B135A24122E2F481003E1EB2 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		B13B74C222D8B66E00812DE8 /* MountainsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MountainsDetail.storyboard; sourceTree = "<group>"; };
 		B13B74C422D8B68F00812DE8 /* MountainsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsDetailViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				45B32AB422DC714D00485C27 /* Workout.swift */,
 				45B32AE822DF0EF400485C27 /* WorkoutCollectionViewCell.swift */,
 				B135A24122E2F481003E1EB2 /* Activities.swift */,
+				B11CC8EC22E59434002EDA51 /* WorkoutRunController.swift */,
 			);
 			path = Workout;
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				B1C09CB622DC776400612BB2 /* Model.xcdatamodeld in Sources */,
 				45B32AEA22DF0EF400485C27 /* WorkoutCollectionViewCell.swift in Sources */,
 				B14ABFA022D75DA900D38DDB /* AppDelegate.swift in Sources */,
+				B11CC8ED22E59434002EDA51 /* WorkoutRunController.swift in Sources */,
 				4B22F5FA22D87DB000602D3A /* MountainsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
