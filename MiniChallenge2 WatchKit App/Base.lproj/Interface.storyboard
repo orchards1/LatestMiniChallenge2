@@ -113,7 +113,7 @@
         <!--pageComplete-->
         <scene sceneID="tCC-w1-cGC">
             <objects>
-                <controller identifier="pageComplete" id="0aK-0d-Wln" customClass="InterfaceController" customModule="MiniChallenge2_WatchKit_App" customModuleProvider="target">
+                <controller identifier="pageComplete" id="0aK-0d-Wln" customClass="CompleteController" customModule="MiniChallenge2_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="center" verticalAlignment="center" text="Completed!" textAlignment="center" id="Dee-dU-3Xp"/>
                         <label width="136" alignment="center" verticalAlignment="bottom" text="Check your phone for your workout summary!" textAlignment="center" numberOfLines="3" id="g7x-8o-dvv"/>
